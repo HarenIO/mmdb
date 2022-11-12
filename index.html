@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="index.js" async></script>
+  <script src="htmlgen.js" async></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Minimalistic Movie Database</title>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">MMDb</a>
+      <form>
+      <input type="text" placeholder="Search MMDb">
+      <div class="autocomplete">
+        
+      </div>
+      </form>
+    </nav>
+  </header>
+    <ul class="movie-info-list">
+      <li><span>Title:</span><span id="movie-title"></span></li>
+      <li><span>Release date:</span><span id="movie-release"></span></li>
+      <li><span>Runtime:</span><span id="movie-runtime"></span></li>
+      <li><span>Rated:</span><span id="movie-rated"></span></li>
+      <li><span>Genre:</span><span id="movie-genre"></span></li>
+      <li><span>Director:</span><span id="movie-director"></span></li>
+      <li><span>Writer:</span><span id="movie-writer"></span></li>
+      <li><span>Actors:</span><span id="movie-actors"></span></li>
+      <li><span>Language:</span><span id="movie-language"></span></li>
+      <li><span>Awards:</span><span id="movie-awards"></span></li>
+      <li><span>Box Office:</span><span id="movie-boxoffice"></span></li>
+      <li><span>Metascore:</span><span id="movie-metascore"></span></li>
+      <li><span>IMDB Rating:</span><span id="movie-imdbrating"></span></li>
+    </ul>
+</body>
+</html>
