@@ -1,2 +1,2 @@
 # mmdb
-Minimal Movie Database
+Minimalistic Movie Database
