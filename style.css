@@ -144,3 +144,8 @@ ul li{
 ul li:nth-child(even){
   background-color:rgb(43, 42, 42);
 }
+
+
+.container{
+  width: 100%;
+}

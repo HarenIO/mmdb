@@ -82,15 +82,15 @@ searchInput.addEventListener('input', (e) => {
 
 
 //If user clicks anywhere on page, hide results window
-document.querySelector(".container").addEventListener('mouseup', () => {
+document.querySelector("body").addEventListener('mouseup', () => {
   document.querySelector('.autocomplete').classList.remove('showAutoComplete')
 })
 
 
 
 //If user clicks on searchbox, show results again; unless search input is empty
-searchInput.addEventListener('mouseup', () => {
-  if(!searchInput.value){
+searchInput.addEventListener('click', () => {
+  if(!movies || searchInput.value){
     return
   }
   document.querySelector('.autocomplete').classList.add('showAutoComplete')
