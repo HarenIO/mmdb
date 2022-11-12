@@ -15,7 +15,7 @@ let movies;
 
 
 const fetchData = async (searchTerm) => {
-  const response = await axios.get('http://www.omdbapi.com/', {
+  const response = await axios.get('https://www.omdbapi.com/', {
     params: {
       apikey: apiKey,
       s: searchTerm
@@ -28,7 +28,7 @@ const fetchData = async (searchTerm) => {
 }
 
 const fetchMovie = async (movieID) => {
-  const response = await axios.get('http://www.omdbapi.com/', {
+  const response = await axios.get('https://www.omdbapi.com/', {
     params: {
       apikey: apiKey,
       i: movieID
@@ -64,7 +64,6 @@ const movieLooper = async (movies) => {
 //Debouncing search input
 let timeoutId;
 searchInput.addEventListener('input', (e) => {
-
   if (timeoutId) {
     clearTimeout(timeoutId)
   }
