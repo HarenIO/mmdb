@@ -1,13 +1,3 @@
-//Problem 1: Visa sökresultat innan alla requests är gjorda & klara, leder till att listan med sökresultat från sökningen fortsätter fyllas på även fast användaren tömt sökrutan.
-
-//Lösning till problem 1: Gör alla förfrågningar till API och spara svaren i array. När alla förfrågningar är klara; loopa igenom array och bygg upp sökresultat.
-
-//Problem 2: Denna lösningen ledde till nytt problem. Det gjorde att sökningen blev otroligt seg, då jag väntade på att alla förfrågningar skulle besvaras innan listan med sökresultat byggdes upp. Blev en delay på 3-5 sek.
-
-//Lösning till problem 2: Avbryt Axios förfrågan ifall användare tömmer sökrutan eller ändrar sökningen till något annat.
-
-//Potentiel lösning, vid sök: Spara sökterm i variabel > Ifall variabel inte matchar input.value, clearSearch()
-
 const apiKey = 'd0bd2728'
 const searchInput = document.querySelector('input')
 let searchKey;
